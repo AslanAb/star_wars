@@ -2,7 +2,6 @@ import usePerson from '../hooks/person'
 
 const PersonPage = () => {
     const { personId, person, loading, films } = usePerson()
-    console.log(films);
     
     return (
         <div>
@@ -18,7 +17,7 @@ const PersonPage = () => {
                         <p>height: {person.height} </p>
                         <p>mass: {person.mass}</p>
                         <p>birth-year: {person.birth_year}</p>
-                        <div>
+                        <div>Films:
                             {films.map((film) => {
                                 return(
                                 <ul key={film.url}>

@@ -6,4 +6,5 @@ export {default as StarshipsPage} from "./StarshipsPage"
 export {default as PersonPage} from "./PersonPage"
 export {default as PlanetPage} from "./PlanetPage"
 export {default as StarshipPage} from "./StarshipPage"
+export {default as MainPage} from "./MainPage"
 

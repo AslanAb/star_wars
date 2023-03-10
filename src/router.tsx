@@ -1,6 +1,6 @@
 import { Children } from "react";
 import { createBrowserRouter } from "react-router-dom";
-import { GeneralPage, ErrorPage, PeoplePage, PlanetsPage, StarshipsPage, PersonPage, PlanetPage, StarshipPage } from "./routes";
+import { GeneralPage, ErrorPage, PeoplePage, PlanetsPage, StarshipsPage, PersonPage, PlanetPage, StarshipPage, MainPage } from "./routes/index";
 const router = createBrowserRouter([
   {
     path: "/",
@@ -9,7 +9,7 @@ const router = createBrowserRouter([
     children: [
       {
         index: true,
-        element: <PeoplePage />
+        element: <MainPage />
       },
       {
         path: "/planets",
@@ -30,6 +30,10 @@ const router = createBrowserRouter([
       {
         path: "/starships/:starshipId",
         element: <StarshipPage />
+      },
+      {
+        path: "/people",
+        element: <PeoplePage />
       },
     ]
   }

@@ -24,7 +24,6 @@ const usePlanet = () => {
         try {
             const res = await apiClient.get(`https://starwars-visualguide.com/assets/img/planets/${planetId}.jpg`)
             setIsImg(true)
-            console.log(res)
         } catch (e) {
             setIsImg(false)
         }

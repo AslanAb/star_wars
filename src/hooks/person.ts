@@ -47,7 +47,6 @@ const usePerson = () => {
         getPerson()
         getFilmsofPerson()
     }, [])
-    console.log(films);
 
     return { personId, person, loading, films }
 }
